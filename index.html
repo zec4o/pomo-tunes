@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pomodoro like timer" />
     <title>FocusTimer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="app">
       <button id="toggle-mode">
-        <span>Ativar/Desativar Light Mode</span>
-        <ion-icon name="sunny-outline"></ion-icon>
-        <ion-icon name="moon-outline"></ion-icon>
+        <span class="sr-only">Toggle light mode</span>
+        <ion-icon name="sunny-outline" class="sun-icon"></ion-icon>
+        <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
       </button>
-      <section id="timer">
+      <section id="timer" class="flex">
         <span id="minutes">00</span>
         <span>:</span>
         <span id="seconds">00</span>
       </section>
 
-      <section id="controls">
-        <button>
-          <ion-icon name="play-outline"></ion-icon>
-        </button>
-        <button>
-          <ion-icon name="pause-outline"></ion-icon>
-        </button>
-        <button>
-          <ion-icon name="timer-outline"></ion-icon>
-        </button>
-        <button>
-          <ion-icon name="stop-outline"></ion-icon>
-        </button>
-        <button>
-          <ion-icon name="volume-off-outline"></ion-icon>
-        </button>
-        <button>
-          <ion-icon name="volume-medium-outline"></ion-icon>
-        </button>
+      <section id="controls" class="flex">
+        <ion-icon name="play-outline" class="play-icon">
+          <span class="sr-only">play button</span>
+        </ion-icon>
+        <ion-icon name="pause-outline" class="pause-icon">
+          <span class="sr-only">pause button</span>
+        </ion-icon>
+        <ion-icon name="timer-outline" class="secondary timer-icon">
+          <span class="sr-only">timer button</span>
+        </ion-icon>
+        <ion-icon name="stop-outline" class="secondary stop-icon">
+          <span class="sr-only">stop button</span>
+        </ion-icon>
+        <ion-icon name="volume-off-outline" class="secondary volume-off-icon">
+          <span class="sr-only">mute song button</span>
+        </ion-icon>
+        <ion-icon name="volume-medium-outline" class="volume-on-icon">
+          <span class="sr-only">unmute song button</span>
+        </ion-icon>
       </section>
     </div>
     <script src="scripts.js"></script>
