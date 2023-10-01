@@ -1,6 +1,9 @@
 # Pomotunes - Pomodoro Timer with Music 🍅🎶
 
 Pomotunes is a simple and elegant Pomodoro timer application with an added twist - it allows you to choose between light and dark modes 🌞🌙 and even play some soothing lo-fi music in the background 🎵 while you work or study. This project is built using JavaScript for the timer functionality and HTML/CSS for the user interface.
+<p align="center">
+  <img src="https://github.com/zec4o/pomo-tunes/assets/50798883/d35dd67e-4f4e-4ae2-b68e-dd13f7010215" alt="Pomotunes mockup"/>
+</p>
 
 ## Features ✨
 
