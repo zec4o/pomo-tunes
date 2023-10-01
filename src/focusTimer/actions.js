@@ -4,6 +4,9 @@ import * as el from "./elements.js"
 import * as sounds from "./sounds.js"
 
 export function toggleTimer() {
+  if (state.minutes === 0) {
+    return
+  }
   state.isRunning = document.documentElement.classList.toggle("running")
   state.isRunning
     ? sounds.buttonStartAudio.play()

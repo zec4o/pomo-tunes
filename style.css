@@ -94,6 +94,11 @@ ion-icon {
   color: var(--button-secondary-color);
 }
 
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .running .play-icon,
 .running .timer-icon,
 .music-on .volume-off-icon,
