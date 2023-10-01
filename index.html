@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="./src/main.js" defer></script>
   </head>
   <body>
     <div id="app">
@@ -28,27 +29,50 @@
       </section>
 
       <section id="controls" class="flex">
-        <ion-icon name="play-outline" class="play-icon">
+        <ion-icon
+          data-action="toggleTimer"
+          name="play-outline"
+          class="play-icon"
+        >
           <span class="sr-only">play button</span>
         </ion-icon>
-        <ion-icon name="pause-outline" class="pause-icon">
+        <ion-icon
+          data-action="toggleTimer"
+          name="pause-outline"
+          class="pause-icon"
+        >
           <span class="sr-only">pause button</span>
         </ion-icon>
-        <ion-icon name="timer-outline" class="secondary timer-icon">
+        <ion-icon
+          data-action="set"
+          name="timer-outline"
+          class="secondary timer-icon"
+        >
           <span class="sr-only">timer button</span>
         </ion-icon>
-        <ion-icon name="stop-outline" class="secondary stop-icon">
+        <ion-icon
+          data-action="resetTimer"
+          name="stop-outline"
+          class="secondary stop-icon"
+        >
           <span class="sr-only">stop button</span>
         </ion-icon>
-        <ion-icon name="volume-off-outline" class="secondary volume-off-icon">
-          <span class="sr-only">mute song button</span>
+        <ion-icon
+          data-action="toggleSound"
+          name="volume-off-outline"
+          class="secondary volume-off-icon"
+        >
+          <span class="sr-only">start song button</span>
         </ion-icon>
-        <ion-icon name="volume-medium-outline" class="volume-on-icon">
-          <span class="sr-only">unmute song button</span>
+        <ion-icon
+          data-action="toggleSound"
+          name="volume-medium-outline"
+          class="volume-on-icon"
+        >
+          <span class="sr-only">mute song button</span>
         </ion-icon>
       </section>
     </div>
-    <script src="scripts.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

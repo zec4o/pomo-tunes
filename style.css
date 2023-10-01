@@ -76,6 +76,7 @@ body {
   justify-content: space-between;
   background-color: var(--controls-bg-color);
   border-radius: 999rem;
+  gap: 2rem;
 }
 
 button,
@@ -95,12 +96,9 @@ ion-icon {
 
 .running .play-icon,
 .running .timer-icon,
-.running .volume-off-icon {
-  display: none;
-}
-
+.music-on .volume-off-icon,
 html:not(.running) .pause-icon,
 html:not(.running) .stop-icon,
-html:not(.running) .volume-on-icon {
+html:not(.music-on) .volume-on-icon {
   display: none;
 }
